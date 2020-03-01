@@ -1,0 +1,28 @@
+server:
+  port: 5000
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 8761
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: 'wfa4'
+        platform: mysql
+        url: jdbc:mysql://localhost/confiboi?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        username: wallefaquino
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create
+        show-sql: tru    
