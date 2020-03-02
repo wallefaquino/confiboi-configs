@@ -4,5 +4,5 @@ server:
 zuul:
   routes:
     confiboi-cotacao:
-      path: /cotacao
-      url: http://localhost:5000/teste
+      path: /**
+      stripPrefix: false
