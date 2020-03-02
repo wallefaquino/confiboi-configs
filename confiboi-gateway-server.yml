@@ -3,6 +3,6 @@ server:
 
 zuul:
   routes:
-    confiboi-cotacao:
+    confiboi-cotacao-service:
       path: /**
       stripPrefix: false
