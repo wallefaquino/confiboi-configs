@@ -6,3 +6,7 @@ zuul:
     confiboi-cotacao-service:
       path: /**
       stripPrefix: false
+
+    confiboi-cotacao-service-2:
+      path: /**
+      stripPrefix: false      
